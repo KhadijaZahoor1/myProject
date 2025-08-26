@@ -1,12 +1,13 @@
-name: Build and Deploy 
+name: Build and Deploy Next.js
 
 on:
   push:
     branches: main 
 
 jobs:
-  deploy:
+  build-deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -20,10 +21,13 @@ jobs:
         run: npm install
 
       - name: Build project
-        run: npm run build
+        run: npm run build -- --no-lint
+
+      - name: Export static site
+        run: npm run export
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build   # or 'dist' depending on your project
+          publish_dir: ./out   # ✅ correct folder for Next.js
