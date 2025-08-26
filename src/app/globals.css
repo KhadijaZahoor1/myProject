@@ -18,10 +18,31 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(121, 121, 121);
+  margin-bottom: 100px;
+}
+.pagination li {
+  border: 1px solid rgba(128, 128, 128, 0.274);
+
+  border-radius: 4px;
+  cursor: pointer;
+}
+.pagination li a {
+  padding: 5px 10px;
+}
+.pagination li:active {
+  border: 1px solid #155e75;
+  color: #155e75;
+}
+
+.pagination li:hover {
+  border: 1px solid #155e75;
+  color: #155e75;
 }

@@ -1,0 +1,44 @@
+<div className=" rounded border-gray-200 border">
+            <Image
+               ref={imgRef}
+              src={product.images[0] ? product.images[0].url : ""}
+              alt="Picture of the author"
+              width={300}
+              height={300}
+              className="rounded w-full"
+            />
+          </div>
+          <div className="flex justify-center gap-2 items-center py-1">
+            {product.images.map((img) => (
+              <div
+                className="rounded border-gray-200 border hover:border-cyan-800"
+                onClick={() => setImgPreview(img.url)}
+              >
+                <Image src={img.url} width={100} height={100} />
+              </div>
+            ))}
+          </div>
+
+
+
+          /////
+           <div className=" rounded border-gray-200 border">
+            <Image
+              src={product.images[0]}
+              alt="Picture of the author"
+              width={300}
+              height={300}
+              className="rounded w-full"
+            />
+          </div>
+          <div className="flex justify-center gap-2 items-center pt-4 pb-1">
+            {product.images.map((img, index) => (
+              <div
+                key={index}
+                className="rounded border-gray-200 border hover:border-cyan-800 hover:rounded hover:border"
+                onClick={() => setImgPreview(img.url)}
+              >
+                <Image alt="small pics" src={img} width={100} height={100} />
+              </div>
+            ))}
+          </div>

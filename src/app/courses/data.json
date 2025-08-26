@@ -1,0 +1,32 @@
+ [
+    {
+        "id": 1,
+        "title": "React front end",
+        "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+        "level": "Beginner"
+    },
+    {
+        "id": 2,
+        "title": "Node js",
+        "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+        "level": "Expert"
+    },
+    {
+        "id": 3,
+        "title": "PHP/Laravel",
+        "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+        "level": "Intermediate"
+    },
+    {
+        "id": 4,
+        "title": "Python",
+        "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+        "level": "Beginner"
+    },
+    {
+        "id": 5,
+        "title": "Javascript",
+        "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+        "level": "Expert"
+    }
+]
